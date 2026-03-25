@@ -1,6 +1,8 @@
 @prefix data: <https://mymovies.com/data#> .
 @prefix concepts: <https://mymovies.com/concepts#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
 # this is a greate movie
 data:KingdomOfHeaven rdf:type concepts:Movie ;
@@ -9,9 +11,14 @@ data:KingdomOfHeaven rdf:type concepts:Movie ;
                                       data:Baldwin ,
                                       data:Saladin ;
                      concepts:hasActor data:OrlandoBloom ;
+                     concepts:releaseYear "2005"^^xsd:integer ;
+                     concepts:originalLanguage "English"^^xsd:string ;
+                     concepts:originalDuration 138 ; # minutes
+                     concepts:title "Kingdom of Heaven"@en ,
+                                    "킹덤 오브 헤븐"@kr ;
 .
 data:OrlandoBloom rdf:type concepts:Actor ;
-		              concepts:isFrom data:UK ;
+                  concepts:isFrom data:UK ;
                   concepts:actsAs data:Balian ;
 .
 data:Balian rdf:type concepts:Blacksmith .
