@@ -16,6 +16,17 @@ data:KingdomOfHeaven rdf:type concepts:Movie ;
                      concepts:originalDuration 138 ; # minutes
                      concepts:title "Kingdom of Heaven"@en ,
                                     "킹덤 오브 헤븐"@kr ;
+                     concepts:hasReview [
+                        concepts:rating 5 ;
+                        concepts:reviewText "A great and entertaining movie" ;
+                     ];
+                     concepts:hasReview [
+                        concepts:rating 4 ;
+                        concepts:reviewtext "A visually stunning movie with great actors." ;
+                        concepts:reviewComment [
+                            concepts:reviewCommentText "This is a great review" ;
+                        ];
+                     ];
 .
 data:OrlandoBloom rdf:type concepts:Actor ;
                   concepts:isFrom data:UK ;
