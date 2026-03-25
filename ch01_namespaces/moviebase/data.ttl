@@ -1,16 +1,17 @@
 @prefix data: <https://mymovies.com/data#> .
 @prefix concepts: <https://mymovies.com/concepts#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 data:KingdomOfHeaven concepts:hasActor data:OrlandoBloom .
 
 data:OrlandoBloom concepts:isFrom data:UK .
 
-data:OrlandoBloom concepts:hasOccupation concepts:Actor .
+data:OrlandoBloom rdf:type concepts:Actor .
 
 data:OrlandoBloom concepts:actsAs data:Balian .
 
-data:Balian concepts:hasOccupation concepts:Blacksmith .
+data:Balian rdf:type concepts:Blacksmith .
 
-data:KingdomOfHeaven concepts:is concepts:Movie .
+data:KingdomOfHeaven rdf:type concepts:Movie .
 
 data:KingdomOfHeaven concepts:hasRole data:Balian .
