@@ -1,0 +1,16 @@
+@prefix data: <https://mymovies.com/data#> .
+@prefix concepts: <https://mymovies.com/concepts#> .
+
+data:KingdomOfHeaven concepts:hasActor data:OrlandoBloom .
+
+data:OrlandoBloom concepts:isFrom data:UK .
+
+data:OrlandoBloom concepts:hasOccupation concepts:Actor .
+
+data:OrlandoBloom concepts:actsAs data:Balian .
+
+data:Balian concepts:hasOccupation concepts:Blacksmith .
+
+data:KingdomOfHeaven concepts:is concepts:Movie .
+
+data:KingdomOfHeaven concepts:hasRole data:Balian .
