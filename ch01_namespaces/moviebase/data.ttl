@@ -2,16 +2,16 @@
 @prefix concepts: <https://mymovies.com/concepts#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-data:KingdomOfHeaven concepts:hasActor data:OrlandoBloom .
-
-data:OrlandoBloom concepts:isFrom data:UK .
-
-data:OrlandoBloom rdf:type concepts:Actor .
-
-data:OrlandoBloom concepts:actsAs data:Balian .
-
+# this is a greate movie
+data:KingdomOfHeaven rdf:type concepts:Movie ;
+                     concepts:hasRole data:Balian ,
+                                      data:Sybilla ,
+                                      data:Baldwin ,
+                                      data:Saladin ;
+                     concepts:hasActor data:OrlandoBloom ;
+.
+data:OrlandoBloom rdf:type concepts:Actor ;
+		              concepts:isFrom data:UK ;
+                  concepts:actsAs data:Balian ;
+.
 data:Balian rdf:type concepts:Blacksmith .
-
-data:KingdomOfHeaven rdf:type concepts:Movie .
-
-data:KingdomOfHeaven concepts:hasRole data:Balian .
